@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const crypto = require("crypto"); 
 const app = express();
 // const BASE_URL = 'https://2718-175-101-32-83.ngrok-free.app';
-const BASE_URL = 'http://192.168.1.7:5000';
+const BASE_URL = 'https://ecommerce-backend-psi-lake.vercel.app';
 app.use(express.json());
 
 // Nodemailer configuration
