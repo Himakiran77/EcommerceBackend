@@ -1,5 +1,22 @@
 {
     "version": 2,
-    "builds": [{"src": "app.js", "use": "@vercel/node"}],
-    "routes": [{"src": "/(.*)", "dest": "/"}]
-}
+    "builds": [
+      {
+        "src": "/app.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/app.js",
+        "methods": ["GET", "POST"]
+      }
+    ],
+    "env": {
+      "MONGODB_URI": "mongodb+srv://himakiranmudambi:Admin@cluster0.j0nrst0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+      "EMAIL_USER": "himakiranmudambi@gmail.com",
+      "EMAIL_PASS": "aqbakenckktziiws",
+      "BASE_URL": "http://192.168.1.7:5000"
+    }
+  }
