@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const crypto = require("crypto"); 
 const app = express();
 // const BASE_URL = 'https://2718-175-101-32-83.ngrok-free.app';
-const BASE_URL = 'https://bbea-2401-4900-1c26-3294-80dd-2292-5715-96dd.ngrok-free.app';
+const BASE_URL = '192.168.1.7';
 app.use(express.json());
 
 // Nodemailer configuration
